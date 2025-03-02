@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 17: Line is indented, but the preceding define statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    $ povname = renpy.input("What is your name?" , length = 30)
+    ^
+
+Ren'Py Version: Ren'Py 8.3.6.25022803
+Sat Mar  1 21:12:56 2025
