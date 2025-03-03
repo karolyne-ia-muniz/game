@@ -1,31 +1,54 @@
-2025-03-02 20:08:02 UTC
+2025-03-03 03:50:48 UTC
 Windows-10-10.0.19041
 Ren'Py 8.3.6.25022803
 
-Early init took 0.12s
-Loading error handling took 0.05s
-Loading script took 0.19s
-Loading save slot metadata took 0.06s
+Early init took 0.16s
+Loading error handling took 0.64s
+Loading script took 3.60s
+Loading save slot metadata took 0.25s
 Loading persistent took 0.00s
-Running init code took 0.08s
-Loading analysis data took 0.02s
+Running init code took 0.45s
+Loading analysis data took 0.04s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
+Reloading save slot metadata took 0.20s
 Index archives took 0.00s
+Backing up script files to 'C:\\Users\\muniz\\AppData\\Roaming/RenPy/backups\\teste':
 Dump and make backups took 0.09s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.10s
+Initial gc took 0.08s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.01s
+Creating interface object took 0.06s
 Cleaning stores took 0.00s
-Init translation took 0.13s
+Init translation took 0.08s
 Build styles took 0.01s
-Load screen analysis took 0.11s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.17s
+Load screen analysis took 0.01s
+Analyze screens took 0.04s
+Save screen analysis took 0.05s
+Prepare screens took 0.24s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 620'
+Version: b'4.6.0 - Build 31.0.101.2130'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(752, 423) drawable=(752, 423)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1057, 611) drawable=(1057, 611)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
