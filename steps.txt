@@ -1,0 +1,9 @@
+git init 
+git add .
+git commit -m ""
+git remote add origin https://github.com/kroll42/game
+git push -u origin master
+
+git add .
+git commit -m "Descrição das alterações"
+git push
