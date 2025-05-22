@@ -15,13 +15,22 @@ default character_entries = {
         ]
     },
         "selina": {
-        "name": "Selina Alexander Bucke",
+        "name": "Selina Sterling",
         # "image": "images/marcellus.png",
         "details": [
-            "My mom, that has passed away a while ago.",
+            "My mom, she has passed away a while ago.",
             "."
         ]
     }
+        "andrew":{
+            "name": "Andrew Alexander Bucke" ,
+            # image: "images/andrew.png",
+            "details": [
+                "One of my oldest friends, alongside Alicia, his sister.",
+                
+            ]
+    }
+    
 }
 
 
