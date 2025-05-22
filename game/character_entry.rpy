@@ -1,5 +1,14 @@
 default character_entries = {
-    "marcellus": {
+    "selina": {
+        "name": "Selina Sterling",
+        # "image": "images/marcellus.png",
+        "details": [
+            "My mom. She died a while ago.",
+            "."
+        ]
+    },
+
+        "marcellus": {
         "name": "Marcellus Amos Harriden",
         # "image": "images/marcellus.png",
         "details": [
@@ -13,23 +22,23 @@ default character_entries = {
         "details":[
             "First Lieutenant, Marcellus second in command. "
         ]
+    
     },
-        "selina": {
-        "name": "Selina Sterling",
-        # "image": "images/marcellus.png",
-        "details": [
-            "My mom, she has passed away a while ago.",
-            "."
-        ]
-    }
         "andrew":{
-            "name": "Andrew Alexander Bucke" ,
+            "name": "Andrew Alexander Buckle" ,
             # image: "images/andrew.png",
             "details": [
                 "One of my oldest friends, alongside Alicia, his sister.",
-                
+
             ]
-    }
+    },
+        "alicia":{
+            "name": "Alicia Alexander Buckle"
+            #image,
+            "details":[
+                "She was my best childhood friend, but with time we grow more distant."
+            ]
+        }
     
 }
 

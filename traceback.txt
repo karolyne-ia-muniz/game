@@ -1,9 +1,17 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00action_menu.rpy", line 117, in __call__
-    raise Exception("%r is not a screen or a label." % orig_screen)
-Exception: 'dictionary' is not a screen or a label.
+  File "game/screens.rpy", line 156, in execute
+    screen character_entry(character):
+  File "game/screens.rpy", line 156, in execute
+    screen character_entry(character):
+  File "game/screens.rpy", line 159, in execute
+    vbox:
+  File "game/screens.rpy", line 163, in execute
+    add character_entries[character]["image"]
+  File "game/screens.rpy", line 163, in <module>
+    add character_entries[character]["image"]
+KeyError: 'image'
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -22,31 +30,36 @@ Full traceback:
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\renpy-8.0.3-sdk\renpy\display\core.py", line 2218, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\renpy-8.0.3-sdk\renpy\display\core.py", line 3289, in interact_core
-    rv = root_widget.event(ev, x, y, 0)
-  File "C:\renpy-8.0.3-sdk\renpy\display\layout.py", line 1297, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\renpy-8.0.3-sdk\renpy\display\layout.py", line 1297, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\renpy-8.0.3-sdk\renpy\display\layout.py", line 1297, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\renpy-8.0.3-sdk\renpy\display\screen.py", line 794, in event
-    rv = self.child.event(ev, x, y, st)
-  File "C:\renpy-8.0.3-sdk\renpy\display\layout.py", line 1297, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\renpy-8.0.3-sdk\renpy\display\layout.py", line 1297, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\renpy-8.0.3-sdk\renpy\display\behavior.py", line 1182, in event
-    return handle_click(self.clicked)
-  File "C:\renpy-8.0.3-sdk\renpy\display\behavior.py", line 1103, in handle_click
-    rv = run(action)
-  File "C:\renpy-8.0.3-sdk\renpy\display\behavior.py", line 401, in run
-    return action(*args, **kwargs)
-  File "renpy/common/00action_menu.rpy", line 117, in __call__
-    raise Exception("%r is not a screen or a label." % orig_screen)
-Exception: 'dictionary' is not a screen or a label.
+  File "C:\renpy-8.0.3-sdk\renpy\display\core.py", line 2748, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\renpy-8.0.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\renpy-8.0.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\renpy-8.0.3-sdk\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "C:\renpy-8.0.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\renpy-8.0.3-sdk\renpy\display\core.py", line 2748, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\renpy-8.0.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\renpy-8.0.3-sdk\renpy\display\screen.py", line 700, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 156, in execute
+    screen character_entry(character):
+  File "game/screens.rpy", line 156, in execute
+    screen character_entry(character):
+  File "game/screens.rpy", line 159, in execute
+    vbox:
+  File "game/screens.rpy", line 163, in execute
+    add character_entries[character]["image"]
+  File "game/screens.rpy", line 163, in <module>
+    add character_entries[character]["image"]
+KeyError: 'image'
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.3.6.25022803
 teste 1.0
-Sat Mar  1 22:45:09 2025
+Thu May 22 11:35:36 2025
