@@ -33,10 +33,10 @@ default character_entries = {
             ]
     },
         "alicia":{
-            "name": "Alicia Alexander Buckle"
+            "name": "Alicia Alexander Buckle",
             #image,
-            "details":[
-                "She was my best childhood friend, but with time we grow more distant."
+            "details": [
+                "She was my best childhood friend, but with time we grew more distant."
             ]
         }
     

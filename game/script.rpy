@@ -27,6 +27,9 @@ label start:
     if not povname:
         $ povname = "Lydia"
     pov "My name is [povname]."
+    image PoseMyteste = "images/PoseMyteste.png"
+    image teste1 = "images/teste1.png"
+    image living = "images/living.jpg"
     jump chapter1
 
     return

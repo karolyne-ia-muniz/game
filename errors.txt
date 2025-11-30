@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/character_entry.rpy", line 25: invalid syntax
-            "andrew":{\
-             ^
+File "game/chapter1.rpy", line 323: end of line expected.
+    jump andrew_accept:
+                      ^
 
-Ren'Py Version: Ren'Py 8.3.6.25022803
-Thu May 22 11:34:44 2025
+File "game/chapter1.rpy", line 325: end of line expected.
+    jump andrew_reject:
+                      ^
+
+Ren'Py Version: Ren'Py 8.5.0.25111603
+Sun Nov 30 17:35:09 2025

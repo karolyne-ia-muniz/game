@@ -2,8 +2,19 @@ git init
 git add .
 git commit -m ""
 git remote add origin https://github.com/kroll42/game
-git push -u origin master
+git push -u origin master ou main
 
 git add .
 git commit -m "Descrição das alterações"
 git push
+
+
+
+
+O usuário e senha do commit não tem relação com a parte de autenticação no Github.
+
+Provavelmente o Windows está tentando usar suas antigas credenciais. Você pode confirmar isto com o comando:
+
+git config credential.helper
+
+Para alterar isto, você precisa ir no Gerenciador de Credenciais do Windows. Lá, procure por uma entrada parecida com git.https://github.com. Edite ele colocando seu novo usuário Github e senha. Depois disto, tente novamente fazer o push.

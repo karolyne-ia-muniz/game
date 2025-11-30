@@ -6,7 +6,9 @@
 "..."
 
 pov "...where am I?"
-
+scene living
+show teste1 at right
+with dissolve
 pov "Huh? Someone's next to me..."
 
 "I feel the warmth of a person... someone bigger than me."
@@ -314,15 +316,39 @@ pov "Why did you do that for?!"
 an "Do you want to get up late and miss the stop? You know how little patience airship pilots have."
 "{i}[an] was not wrong. Specially in times like the one we're living right now, they run in a tight schedule.{/i}"
 pov "I know that, but you didn't need to do this!"
-"It only came to me how close he was."
-"{i}Too close!{/i}"
-"I locked eyes with [an] for a brief momment before getting up. "
+
+menu:
+    "His face is really close...":
+        jump andrew_accept
+
+    "Too close!":
+        jump andrew_reject
+
+label andrew_accept:
+    "My body stiffens for a moment. This is not how you approach someone you haven't seen in years."
+    "I can feel my face growing warm, my pulse quickening. I'm not used to this happening to me."
+    "It's not unpleasant..."
+    pov "Sure... I—I'll get going."
+    jump andrew_end  # ← prevents falling into andrew_reject
+
+label andrew_reject:
+    pov "What are you doing?"
+    "My tone is surly. I had a less than adequate night sleep and I don't plan on putting up with anyone's jokes."
+    an "Oh, it's just..."
+    "I can see that [an] is trying to give an excuse. His emotions are all over his face."
+    an "Your face is puffy."
+    pov "Thank you for the information. Well, if you excuse me..."
+    jump andrew_end  # ← both paths now converge cleanly
+
+label andrew_end:
+    "I locked eyes with [an] for a brief moment before getting up."
+    # continue story here...
 "{i}These eyes, they're defnitly [an]'s.{/i}"
 "Deep, mature hazel eyes, in contrast with his youthful face."
 "A little flustared, I quicly get up and set direction to the airships washroom."
 an "Go on, I'll be waiting for you."
 "The washroom was just as small as the cabin we were travaled at."
 "{i}Great.{/i}"
-
+""
 
 
