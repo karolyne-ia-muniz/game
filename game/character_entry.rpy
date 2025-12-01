@@ -16,7 +16,7 @@ default character_entries = {
             "."
         ]
     },
-        "norvall":{
+        "norval":{
         "name": "Norval Lucius Bennett",
         #"image" 
         "details":[

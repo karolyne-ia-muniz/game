@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapter1.rpy", line 323: end of line expected.
-    jump andrew_accept:
-                      ^
-
-File "game/chapter1.rpy", line 325: end of line expected.
-    jump andrew_reject:
-                      ^
+File "game/chapter1.rpy", line 367: end of line expected.
+    an "It's always go to be ready. But yes, I am very excited!" "I'll finally see Alicia after a good while."
+                                                                 ^
 
 Ren'Py Version: Ren'Py 8.5.0.25111603
-Sun Nov 30 17:35:09 2025
+Sun Nov 30 20:58:28 2025

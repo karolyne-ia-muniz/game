@@ -21,6 +21,8 @@ define persistent.seen_words = set()
 # The game starts here.
 
 label start:
+
+
     $ povname = renpy.input("What is your name?" , length = 30)
     $ povname = povname.strip()
 
@@ -33,3 +35,25 @@ label start:
     jump chapter1
 
     return
+
+#"# Debug screen: Affection Tracker
+#label debug_affection:
+#   scene bg black
+#  show screen debug_affection_screen
+#    pause  # Wait for click or keypress
+#    hide screen debug_affection_screen
+#    return
+
+# In script.rpy — only while testing!
+#init python:
+#    config.keymap['debug_affection'] = ['d']  # Press D to open debug''
+
+#label after_load:
+#    if config.developer:
+#        $ renpy.call_in_new_context(debug_affection_hotkey)
+
+#label debug_affection_hotkey:
+#    python:
+#        ui.keymap(debug_affection=["d"])
+#        ui.interact(suppress_overlay=True, suppress_underlay=True)
+#    return"

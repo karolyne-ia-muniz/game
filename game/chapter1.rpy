@@ -1,4 +1,11 @@
-﻿label chapter1:
+﻿
+#default affection_andrew = 0
+#default affection_marcellus = 0
+#default affection_norval = 0
+
+
+
+label chapter1:
     "."
 
 ".."
@@ -319,9 +326,11 @@ pov "I know that, but you didn't need to do this!"
 
 menu:
     "His face is really close...":
+        $ affection_andrew += 2 #positive two points for andrew
         jump andrew_accept
 
     "Too close!":
+        $ affection_andrew -= 1 #negative points 
         jump andrew_reject
 
 label andrew_accept:
@@ -343,12 +352,39 @@ label andrew_reject:
 label andrew_end:
     "I locked eyes with [an] for a brief moment before getting up."
     # continue story here...
-"{i}These eyes, they're defnitly [an]'s.{/i}"
+"{i}These eyes—they're definitely [an]'s.{/i}"
 "Deep, mature hazel eyes, in contrast with his youthful face."
-"A little flustared, I quicly get up and set direction to the airships washroom."
+"A little flustered, I quickly get up and head to the airship's washroom."
+#
 an "Go on, I'll be waiting for you."
-"The washroom was just as small as the cabin we were travaled at."
+
+"The washroom was just as small as the cabin we traveled in."
 "{i}Great.{/i}"
-""
+
+"I wash my face and tidy myself up."
+"You can't do much in a place where there's no room to stretch your arms. At least I'm presentable now."
+
+"I go back to the cabin to find that [an] has everything ready to go."
+
+pov "Wow, are you excited to go back? You have everything packed already."
+
+an "It's always good to be ready. But yes—I am very excited! I'll finally see Alicia after such a long time."
+
+pov "It's nice to see you so happy. Well... besides Alicia and, of course, Father, there aren't many people I'm eager to see."
+
+an "There's not much we can do about that. But we're coming back together! And I'm sure Mr. Sterling will be glad to see his daughter again."
+
+pov "You're right. I do miss Father..."
+
+"My feelings are still in turmoil, but with [an] here beside me, I feel more at ease."
+
+"{i}Oh, right.{/i}"
+pov "I almost forgot to ask you, [an]—why are you coming back? If it's okay to ask."
+
+an "Oh! Hahaha... right. It's nothing extraordinary. In times like these, you have to stay close to the people you care about."
+
+"I catch [an]'s gaze lingering on me for just a moment—but before I can say anything, the airship's intercom crackles to life."
+
+    
 
 

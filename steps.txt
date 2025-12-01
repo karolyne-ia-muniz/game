@@ -8,7 +8,7 @@ git add .
 git commit -m "Descrição das alterações"
 git push
 
-
+token: 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
 
 
 O usuário e senha do commit não tem relação com a parte de autenticação no Github.
