@@ -439,5 +439,5 @@ else:
 an "We have to go soon… but we'll go together. Okay?"
 
 "Head down, I let him pull me up. I don't feel brave. Just tired."
-"[an] stays close as we step into the corridor—his shoulder a quiet promise against mine."
+"[an] stays close as we step into the corridor.#"—his shoulder a quiet promise against mine.
 
