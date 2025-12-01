@@ -6,6 +6,7 @@ define an = Character("Andrew")
 define se = Character("Selina")
 define a = Character("Alicia")
 define b = Character("Benedict")
+define air = Character("Pilot")
 
 define persistent.seen_words = set()
 

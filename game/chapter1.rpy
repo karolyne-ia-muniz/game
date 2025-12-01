@@ -384,7 +384,60 @@ pov "I almost forgot to ask you, [an]—why are you coming back? If it's okay to
 an "Oh! Hahaha... right. It's nothing extraordinary. In times like these, you have to stay close to the people you care about."
 
 "I catch [an]'s gaze lingering on me for just a moment—but before I can say anything, the airship's intercom crackles to life."
+air "Attention, passengers. We are now approaching Oldhill. I repeat, we are now approaching Oldhill."
+air "Estimated landing in 10 minutes. Prepare for descent."
 
-    
+"For a heartbeat, everything is fine — then my ribs clamp shut."
+"My heart jackhammers against my sternum. Too fast. Too loud."
+"Sound warps—the airship's hum stretches into a drone. My vision tunnels, edges blurring into static."
+"{i}No, not now. Not here.{/i}"
+"{i}I need to calm down—I need to—{/i}"
+"But my lungs won't obey. Every breath I suck in leaks out like smoke."
 
+pov "Ah... ah—"
+
+an "[pov]? Hey—look at me! Are you okay?"
+
+"His voice swims through cotton. My skull is a vault—only one thought echoes inside, over and over:"
+"{i}Don't leave this ship. If you step off, they'll see you. They'll call you murderer. Foul, cowardly murderer.{/i}"
+
+"I press my spine into the cabin wall, fingers digging into my suitcase until my knuckles bleach white."
+"I shouldn't have come back. I don't deserve to—"
+
+an "[pov]! Hey—what's happening?"
+
+"[an] drops to his knees in front of me. His hands hover—hesitant—then cup my cheeks, warm and steady."
+
+an "Look at me. [pov], look at me."
+an "Breathe. Just breathe."
+
+"My chest heaves uselessly. My body's forgotten how."
+
+an "In… and out. Watch me."
+"He inhales—slow, deliberate—and holds my gaze like an anchor."
+"I mimic him, ragged at first. In… out…"
+"The world snaps back in fragments: the smell of his coat, the tremor in his thumbs, the soft click of the intercom."
+
+"Slowly, the vise around my ribs loosens. But the shame? That stays—coiled low in my gut."
+
+"He doesn't ask if I'm fine. He just whispers:"
+an "Better?"
+
+"I can't speak. Tears well, hot and sudden. He sees it. Nods like he's been here before."
+
+an "It's okay. I've got you."
+
+if affection_andrew >= 2:
+    an "I've always cared for you — even when we were kids. And that won't change now."
+    "His voice is soft, but certain. Like he's been carrying this truth for years."
+else:
+    an "You doing okay? We've got time before departure."
+
+"I nod back—weak, reluctant."
+
+"He stands, offering his hand. His voice is gentle, but firm with urgency:"
+an "We have to go soon… but we'll go together. Okay?"
+
+"Head down, I let him pull me up. I don't feel brave. Just tired."
+"[an] stays close as we step into the corridor—his shoulder a quiet promise against mine."
 

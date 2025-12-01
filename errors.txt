@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/chapter1.rpy", line 367: end of line expected.
-    an "It's always go to be ready. But yes, I am very excited!" "I'll finally see Alicia after a good while."
-                                                                 ^
+File "game/chapter1.rpy", line 387: expected statement.
+    air = "Attention, passengers. We are now approaching Oldhill. I repeat, we are now approaching Oldhill."
+        ^
+
+File "game/chapter1.rpy", line 388: expected statement.
+    air = "Estimated landing in 10 minutes. Prepare for descent."
+        ^
 
 Ren'Py Version: Ren'Py 8.5.0.25111603
-Sun Nov 30 20:58:28 2025
+Sun Nov 30 22:23:42 2025
