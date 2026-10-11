@@ -82,7 +82,9 @@ init python:
 init python:
     def unlock_next_character_detail(char_id):
         current = character_entries[char_id]["unlocked_details"]
+        # FIX: Get the length of the "details" list, not "unlocked_details"
         total = len(character_entries[char_id]["details"])
+        
         if current < total:
             character_entries[char_id]["unlocked_details"] += 1
             notify_new_info(character_entries[char_id]["name"])

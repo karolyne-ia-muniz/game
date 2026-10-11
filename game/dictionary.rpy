@@ -1,3 +1,5 @@
+default persistent.seen_words = set()
+
 default dictionary_entries = {
     "steampunk": "A genre of science fiction that has a historical setting and typically features steam-powered machinery.",
     "alchemy": "The medieval forerunner of chemistry, focused on the transmutation of matter.",

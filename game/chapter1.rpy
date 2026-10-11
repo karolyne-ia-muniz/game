@@ -3,7 +3,6 @@
 #default affection_marcellus = 0
 #default affection_norval = 0
 
-textbutton "Characters" action ShowMenu("character_codex")
 default persistent.seen_words = set()
 
 
@@ -288,6 +287,12 @@ pov "Why did you change cabins? I thought that was not possible."
 an "Ah, yes... I'll be honest with you [pov]. I was kicked out." #an smile
 
 "His tone was light, almost indifferent. Seemed like what he only cared about was arriving in Pratterbarrow"
+# 1. Unlock the location in the background
+$ unlock_location("pratterbarrow")
+
+# 2. Show the cool pop-up on the screen!
+#show screen location_popup("pratterbarrow")
+
 
 pov "Well, that explains it. May I ask why?"
 

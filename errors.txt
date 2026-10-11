@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/chapter1.rpy", line 6: end of line expected.
-    textbutton "Characters" action ShowMenu("character_codex")
-                            ^
+File "game/screens.rpy", line 135: 'xmaximum' is not a keyword argument or valid child of the add statement.
+    add data["image"] xalign 0.5 xmaximum 800 ymaximum 500
+                                         ^
+
+File "game/screens.rpy", line 157: 'xmaximum' is not a keyword argument or valid child of the add statement.
+    add data["image"] xalign 0.5 xmaximum 400 ymaximum 300
+                                         ^
 
 Ren'Py Version: Ren'Py 8.5.3.26051504
-Sun Oct 11 18:25:29 2026
+Sun Oct 11 19:38:00 2026

@@ -111,18 +111,53 @@ screen characters_menu():
 
 
 #locations
+# 1. The list of unlocked locations
 screen locations_menu():
     tag menu
-
     vbox:
         text "Locations" size 40
-
-        # Location entries in a list
-        for location in location_entries:
-            textbutton location_entries[location]["name"] action ShowMenu("location_entry", location=location)
-
+        for loc_id, data in location_entries.items():
+            if data["unlocked"]:
+                textbutton data["name"] action ShowMenu("location_entry", loc_id=loc_id)
+        
         textbutton "Return to Entries" action ShowMenu("entries_menu")
 
+# 2. The screen that actually shows the map
+screen location_entry(loc_id):
+    tag menu
+    $ data = location_entries[loc_id]
+    
+    vbox:
+        text data["name"] size 40
+        
+        # This displays your map image! 
+        # We use xmaximum/ymaximum so it doesn't overflow the screen if the Azgaar map is huge.
+        add data["image"] xalign 0.5 xzoom 0.1 yzoom 0.1 
+        
+        text data["description"] size 20
+        
+        textbutton "Return to Locations" action ShowMenu("locations_menu")
+
+# 3. The cool pop-up that appears during the story!
+screen location_popup(loc_id):
+    zorder 100 # Makes it appear on top of everything
+    $ data = location_entries[loc_id]
+    
+    frame:
+        xalign 0.5
+        yalign 0.2
+        xpadding 20
+        ypadding 20
+        background "#000000CC" # Semi-transparent black background
+        
+        vbox:
+            text "New Location Discovered!" size 24 bold True color "#FFD700"
+            text data["name"] size 30
+            # Show a smaller thumbnail of the map in the pop-up
+            add data["image"] xalign 0.5 xzoom 0.1 yzoom 0.1 
+            
+    # Automatically hides the pop-up after 3.5 seconds
+    timer 3.5 action Hide("location_popup")
 
 #itens 
 screen items_menu():
@@ -211,17 +246,14 @@ screen entries_menu():
     vbox:
         text "Entries" size 50
 
-        # Submenu buttons
-        textbutton "Characters" action ShowMenu("characters_menu")
-        textbutton "Dictionary" action ShowMenu("dictionary")
-        textbutton "Locations" action ShowMenu("locations_menu")
-        textbutton "Items" action ShowMenu("items_menu")
-        textbutton "Misc Info" action ShowMenu("misc_menu")
+        # UPDATED: Match the exact screen names defined in your .rpy files
+        textbutton "Characters" action ShowMenu("character_codex")
+        textbutton "Dictionary" action ShowMenu("dictionary_menu")
+        textbutton "Locations" action ShowMenu("locations_menu")  # Placeholder for now
+        textbutton "Items" action ShowMenu("items_menu")          # Placeholder for now
+        textbutton "Misc Info" action ShowMenu("misc_menu")       # Placeholder for now
 
-        # Return to the main menu
         textbutton "Return to Main Menu" action ShowMenu("main_menu")
-
-
 
 ##quick menu
 screen quick_menu():
@@ -1664,7 +1696,7 @@ screen debug_affection_screen():
 
         vbox:
             spacing 10
-            text "Affection Debug" size 24 bold 
+            text "Affection Debug" size 24 bold True
             text "Andrew: [affection_andrew]" size 18
             text "Marcellus: [affection_marcellus]" size 18
             text "Norval: [affection_norval]" size 18

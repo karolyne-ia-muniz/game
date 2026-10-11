@@ -1,34 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/screens.rpy", line 114, in execute
-    screen locations_menu():
-  File "game/screens.rpy", line 114, in execute
-    screen locations_menu():
-  File "game/screens.rpy", line 117, in execute
-    vbox:
-  File "game/screens.rpy", line 121, in execute
-    for location in location_entries:
-  File "game/screens.rpy", line 121, in <module>
-            for location in location_entries:
-    ...<18 lines>...
-    #dictonary info
-NameError: name 'location_entries' is not defined. Did you mean: 'dictionary_entries'?
+  File "game/character_entry.rpy", line 50, in execute
+    screen character_codex():
+  File "game/character_entry.rpy", line 50, in execute
+    screen character_codex():
+  File "game/character_entry.rpy", line 52, in execute
+    use navigation(_("Characters"))
+TypeError: too many positional arguments
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "renpy/common/_layout/screen_load_save.rpym", line 35, in script
-    $ ui.interact()
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
   File "renpy/ast.py", line 1193, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "renpy/python.py", line 1276, in py_exec_bytecode
     exec(bytecode, globals, locals)
     ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/common/_layout/screen_load_save.rpym", line 35, in <module>
-    $ ui.interact()
-      ~~~~~~~~~~~^^
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+    ~~~~~~~~~~~^^
   File "renpy/ui.py", line 306, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -67,27 +63,20 @@ Traceback (most recent call last):
   File "renpy/display/screen.py", line 715, in update
     self.screen.function(**self.scope)
     ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
-  File "game/screens.rpy", line 114, in execute
-    screen locations_menu():
-  File "game/screens.rpy", line 114, in execute
-    screen locations_menu():
-  File "game/screens.rpy", line 117, in execute
-    vbox:
-  File "game/screens.rpy", line 121, in execute
-    for location in location_entries:
-  File "renpy/python.py", line 1308, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/python.py", line 1301, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "game/screens.rpy", line 121, in <module>
-            for location in location_entries:
-    ...<18 lines>...
-    #dictonary info
-NameError: name 'location_entries' is not defined. Did you mean: 'dictionary_entries'?
+  File "game/character_entry.rpy", line 50, in execute
+    screen character_codex():
+  File "game/character_entry.rpy", line 50, in execute
+    screen character_codex():
+  File "game/character_entry.rpy", line 52, in execute
+    use navigation(_("Characters"))
+  File "renpy/parameter.py", line 327, in apply
+    _raise(TypeError, "too many positional arguments")
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/parameter.py", line 266, in _raise
+    raise exct(msg.format(*argz, **kwargz)) from None
+TypeError: too many positional arguments
 
 Windows-10-10.0.19045-SP0 AMD64
 Ren'Py 8.5.3.26051504
 teste 1.0
-Sun Oct 11 18:19:05 2026
+Sun Oct 11 19:17:18 2026
