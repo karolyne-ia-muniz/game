@@ -1664,7 +1664,7 @@ screen debug_affection_screen():
 
         vbox:
             spacing 10
-            text "Affection Debug" size 24 bold True
+            text "Affection Debug" size 24 bold 
             text "Andrew: [affection_andrew]" size 18
             text "Marcellus: [affection_marcellus]" size 18
             text "Norval: [affection_norval]" size 18
