@@ -21,6 +21,7 @@ define persistent.seen_words = set()
 
 # The game starts here.
 
+
 label start:
 
 

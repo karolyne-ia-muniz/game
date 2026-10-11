@@ -3,6 +3,8 @@
 #default affection_marcellus = 0
 #default affection_norval = 0
 
+textbutton "Characters" action ShowMenu("character_codex")
+default persistent.seen_words = set()
 
 
 label chapter1:
@@ -439,5 +441,23 @@ else:
 an "We have to go soon… but we'll go together. Okay?"
 
 "Head down, I let him pull me up. I don't feel brave. Just tired."
-"[an] stays close as we step into the corridor—his shoulder a quiet promise against mine."
+"[an] stays close, but gives me enough space for me to breath."
 
+"Soon after we set foot in Oldhil. Its train statation connects Pratterbarrow and the other neighbouring small cities."
+"The station has muted colors, a reminder of the once brightness and bussiness of the town. The soft wind brushes your hair as you walk around, taking in the cenary."
+"For a moment it even feels like its calling you back to the place you called home. "
+"As you sit down on the rusted iron benches, [an] approaches."
+
+an "How are you now? Did the fresh air help a bit?"
+pov "Yes, a bit. Thank you."
+an "No problem. I already saw the time of the next departure, we have one hour still."
+an "Do you want something to eat?"
+"It feels like only when he asked you realized how hungry you were."
+pov "I'm starving! Haha..."
+pov "Hey [an], do you still think Lady Carlton has that shop near the shoe store?"
+an "Really? You remember that but didn't remember me?"
+
+"His laugher is light, making my mind feel slightly more at ease"
+"We both head down to the 'busy' part of the city, we talk as if we've never been separeted before."
+
+"An hour later we find ourselfs in"
