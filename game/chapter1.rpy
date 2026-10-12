@@ -446,6 +446,195 @@ else:
 an "We have to go soon… but we'll go together. Okay?"
 
 "Head down, I let him pull me up. I don't feel brave. Just tired."
-"[an] stays close as we step into the corridor—his shoulder a quiet promise against mine."
+"[an] stays close as we step into the corridor."
 
-"An hour later we find ourselfs in"
+"An hour later, we find ourselves in Oldhill."
+
+"We finally have enough time to actually talk. We comment on how Mrs. Jackson's apple pies are still sickly sweet,"
+"and how the fountain near the terminal, even after all this time, still hasn't received a fresh coat of paint."
+
+"They are all those little details you think you're the only one who notices—until you talk with someone else."
+
+"It's enough to keep me grounded. Even if it's just for an hour."
+
+"But the hour passes, as hours always do."
+
+"The whistle of the Pratterbarrow-bound train pierces the air, sharp and demanding."
+"Andrew helps me with my luggage, his hand lingering on my arm for a brief, reassuring second."
+
+an "Ready?"
+
+pov "As I'll ever be."
+
+# --- SCENE 1: ARRIVAL & ALICIA ---
+
+"The train wheels finally screech to a halt at Pratterbarrow Station."
+
+"The walk to [an]'s house is short, taking us past the village fountain and over the old stone bridge connecting the station to the town."
+
+"Before I can even process the familiar cobblestones, [an] whisks me away."
+
+"He doesn't take me to the main estate. Instead, he leads me straight to [a]'s place."
+
+an "'You should stay the night here,' he says gently, taking my heavy bag from my shoulder. "
+an "Just for tonight."
+
+"I just blurt out a 'yes' without thinking much."
+"{i}Oh, uh. Right. Yes.{/i}"
+
+"The door flies open before we even knock."
+
+"[a] greets me with the biggest hug I have ever received. She smells like vanilla and fresh sawdust—a comforting, familiar scent."
+
+"For the first time since I stepped off the train, I can actually breathe."
+
+a "[pov]! You're really here!"
+a "I missed you so much! How was Beakford? Tell me everything!"
+a "Are the sailors cute? Or are they just bitter old men?"
+a "Or are they more interested in their crewmates? Hehehe!"
+
+"I laugh, a genuine sound that surprises even me. I forgot how—ahem—forthcoming she was about men."
+
+"We spend the evening catching up by the hearth. The house is modest, filled with the beautiful, hand-carved oak furniture her father made, but to me, it feels like a palace of safety."
+
+"Her warmth is a balm to my frayed nerves."
+
+# --- SCENE TRANSITION ---
+
+"I sleep better than I have in months, wrapped in quilts stitched by Alicia's own hands."
+
+"When morning comes, the smell of strong coffee and baking bread pulls me from my dreams."
+
+"I stretch, feeling the lingering tension in my shoulders finally begin to melt away."
+
+# --- SCENE 2: THE FATHER (The Rekindling) ---
+
+"But the peace can't last forever. Today, I have to face him."
+
+pov "Father..."
+
+"My chest swells with so many things. But mostly, it's the simple, desperate desire to just hug him after all this time."
+
+"I say my goodbyes to [a] and [an] at the door."
+
+"[an] lingers, his hand hovering near my arm, but [a] playfully shoves him back inside."
+
+a "Go on, [an]! Let her breathe. You can hover over her tomorrow."
+
+"If it wasn't for her, he'd be glued to my side all day."
+
+"The morning air is crisp, carrying the damp, earthy scent of the nearby river. It's a familiar smell, one that brings me a quiet comfort."
+
+"The walk to Father's workshop is short. I go early, knowing he's always there before the sun fully rises."
+
+"I knock on the heavy wooden door. The rhythmic sound of sawing stops."
+
+"A moment passes. Then, the door opens reluctantly."
+
+"He looks up, his gruff expression ready to dismiss an early customer—until he sees me."
+
+"His face changes. The stern lines melt away, replaced by a sudden, overwhelming vulnerability."
+
+"He pulls me into a hug. Hard. I melt into it, wrapping my arms around him, burying my face in his shoulder."
+
+"When he pulls back, his eyes are glassy. His face is lined with new exhaustion, but his hands—rough and callused from years of woodworking—cup my face gently."
+
+"He murmurs, his voice thick:"
+
+b "You look just like her."
+
+"I look down, my throat tightening. I don't know how to reply to that, so I just let my hands rest over his."
+
+"He leads me into his office, pouring two cups of weak, lukewarm tea."
+
+"We talk for hours. Or rather, he talks, and I listen."
+
+"Business is slow, he explains. With the curfews and the war, people aren't buying new furniture. They're just trying to survive."
+
+"But as the hours pass, the heavy, unspoken distance between us—built over years of silence—begins to quietly mend."
+
+"{i}He still sees me as his little girl. Even after all this time. Even if I'm a grown woman sitting across from him.{/i}"
+
+# --- SCENE 3: THE CHILDHOOD HOME (The Shift in Tone) ---
+"Later that afternoon, I find myself walking to my old childhood home on the edge of the estate."
+"The air here is heavier. Colder."
+"I push open the creaking door. Dust motes dance in the slivers of light cutting through the boarded windows."
+pov "Why did I come here?"
+
+# --- SCENE 4: THE GHOSTS & THE COLLAR (The Discovery) ---
+"Suddenly, the temperature drops."
+"Shadows stretch unnaturally across the floorboards. Whispers—faint, overlapping, familiar—echo in the corners of the room."
+"{i}They're not real. They're just memories. Just guilt.{/i}"
+"I squeeze my eyes shut, backing away until my heel hits something hard beneath the loose floorboards."
+"I kneel, prying the wood up with trembling fingers."
+"Inside rests a small, ornate box. I open it."
+"A magic collar glints in the dim light, humming with a faint, unnatural energy."
+pov "What... what is this?"
+
+# --- SCENE 5: THE DEPARTURE (Setting up the Detention) ---
+"I can't stay here. I can't let Father see this yet."
+"I pack a bag, leaving a vague note for Alicia, and catch the evening train to [Other City Name] to seek answers."
+
+
+
+
+
+label norval_detention:
+    scene townhall_exterior_night
+    with fade
+
+    "The Pratterbarrow town hall looms in the moonlight, its windows barred and guarded by military patrols."
+    "I missed the curfew by an hour. My father's name should mean something here, but the guards at the gate didn't care."
+    "They brought me inside, into a cold, dimly lit holding office."
+
+    "The door clicks shut behind me. I turn."
+
+    "Standing by the desk is a man I have never seen before."
+    "First Lieutenant Norval Lucius Bennett."
+
+    "He is tall, his posture rigid as a steel rod. The lamplight catches the sun-kissed tone of his skin, a stark contrast to the crisp, immaculate dark uniform of the Qedrurg military."
+    "There is no warmth in his eyes. No recognition. Only cold, calculating assessment."
+
+    no "Name."
+
+    "His voice is low, smooth, and utterly devoid of amusement. It’s not a question; it’s a demand."
+
+    pov "Lydia Sterling. I told the guards at the gate—"
+
+    no "Identification."
+
+    "He doesn't look up from the ledger on his desk. His pen scratches against the paper, a steady, dismissive rhythm."
+
+    pov "I... I left it at my father's estate. I was only gone for a day to handle urgent matters. I can explain—"
+
+    "Norval finally looks up. His gaze pins me to the spot, heavy and unyielding."
+
+    no "Wartime curfew is not a suggestion, Miss Sterling. It is a mandate."
+    no "You are past curfew. You have no identification. And you are attempting to negotiate with an officer of the military."
+
+    "He sets the pen down. The sound is like a gavel striking in the quiet room."
+
+    no "I do not care who your father is. I do not care about your 'urgent matters'."
+    no "You will remain in the holding cell until your identity can be verified by the estate tomorrow morning."
+
+    pov "A cell? For forgetting a piece of paper? This is ridiculous! Do you know who my father is?"
+
+    "Norval steps around the desk. He towers over me, but he doesn't raise his voice. That's what makes it terrifying. He is entirely in control."
+
+    no "What is ridiculous is the assumption that the rules bend for you."
+    no "Guard. Escort Miss Sterling to the holding cell."
+
+    "Two soldiers step forward from the shadows, their hands resting on their batons."
+
+    no "Do not make this more difficult than it needs to be."
+
+    "I want to argue. I want to scream. But the absolute, chilling certainty in his stern face tells me one thing:"
+    "First Lieutenant Norval Bennett does not bluff, and he does not care about my privilege."
+
+    "Defeated, I let the guards lead me down the hall."
+    
+    # Optional: This is a great place for a subtle relationship shift. 
+    # Even though he's strict, he's fair. 
+    $ affection_norval += 1 
+
+    jump holding_cell_scene
